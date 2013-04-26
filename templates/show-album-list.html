@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<div class="single-column-layout-25">
+		<div class="middle-column">
+			<div class = "section">
+			{% if error == None %}
+				<h2>Here are some amazing Albums !</h2>
+					<ul>				
+					{% for item in album_list %}
+						<li><a href="{{ url_for('show_album', album_id = item.id) }}">{{item.name}}</a>{{ item.year_of_publication }}</li>
+					{% endfor %}
+					</ul>
+			{% else %}
+					<p>{{ error }}</p>
+			{% endif %}
+			</div>
+		</div>
+	</div>
+{% endblock %}

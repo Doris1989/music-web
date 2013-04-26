@@ -1,0 +1,79 @@
+form {
+	overflow : hidden;
+}
+
+label {
+	font-size     : 14px;
+}
+
+input{
+	margin-bottom : 8px;
+	width         : 100%;
+	border        : solid 1px SteelBlue;
+
+	/* Magic spell to avoid the right side to be eaten */
+	box-sizing: border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing: border-box;
+}
+
+button {
+	text-align    : center;
+}
+
+/*
+  Panels, works with ui.render_panel
+ */
+
+.panel {
+	margin-bottom : 8px;
+}
+
+.panel h1 {
+	border-style        : none;
+	border-bottom-style : solid;
+	border-width        :  2px;
+	border-color        : RoyalBlue;
+	margin-left         :  8px;
+	margin-right        :  8px;
+	padding-left        : 16px;
+	padding-right       : 16px;
+	padding-bottom      :  4px;
+	font-size           : 18px;
+}
+
+.panel h1.left {
+		display             : inline-block;
+}
+
+.panel h1.center {
+		text-align          : center;
+}
+
+.panel-content .center {
+	margin-left      : 8px;
+	margin-right     : 8px;
+	padding          : 8px;
+	font-size        : 12px;
+}
+
+.panel-content .left {
+	margin-left      : 8px;
+	margin-right     : 8px;
+	padding          : 8px;
+	font-size        : 12px;
+	overflow         : hidden;
+}
+
+.panel-content p {
+	padding-bottom : 8px;
+}
+
+.panel-content hr {
+	clear            : both;
+	color            : RoyalBlue;
+	width            : 100%;
+	margin-top       : 8px;
+	margin-bottom    : 8px;
+	border           : 1px solid;
+}
